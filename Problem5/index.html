@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+
+        .function-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="button"] {
+            margin: 5px 0;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="button"] {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #0056b3;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            input[type="text"],
+            input[type="button"] {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Functions Demo</h1>
+
+    <div class="function-container">
+        <h2>1. toCase Function</h2>
+        <input type="text" id="toCaseInput" placeholder="Enter a string">
+        <input type="button" value="Convert" onclick="runToCase()">
+        <div id="toCaseResult" class="result"></div>
+    </div>
+
+    <div class="function-container">
+        <h2>2. firstChar Function</h2>
+        <input type="text" id="firstCharInput" placeholder="Enter a string">
+        <input type="button" value="Get First Char" onclick="runFirstChar()">
+        <div id="firstCharResult" class="result"></div>
+    </div>
+
+    <div class="function-container">
+        <h2>3. rotate Function</h2>
+        <input type="text" id="rotateInput" placeholder="Enter a string">
+        <input type="button" value="Rotate" onclick="runRotate()">
+        <div id="rotateResult" class="result"></div>
+    </div>
+
+    <script>
+        function toCase(str) {
+            return `${str.toLowerCase()}-${str.toUpperCase()}`;
+        }
+
+        function firstChar(str) {
+            return str.trim()[0];
+        }
+
+        function rotate(arr) {
+            if (arr.length <= 1) return arr;
+            return arr.slice(1) + arr[0];
+        }
+
+        function runToCase() {
+            const input = document.getElementById('toCaseInput').value;
+            const result = toCase(input);
+            document.getElementById('toCaseResult').textContent = result;
+        }
+
+        function runFirstChar() {
+            const input = document.getElementById('firstCharInput').value;
+            const result = firstChar(input);
+            document.getElementById('firstCharResult').textContent = result;
+        }
+
+        function runRotate() {
+            const input = document.getElementById('rotateInput').value;
+            const result = rotate(input);
+            document.getElementById('rotateResult').textContent = result;
+        }
+    </script>
+</body>
+
+</html>

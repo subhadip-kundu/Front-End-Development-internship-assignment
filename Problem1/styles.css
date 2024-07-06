@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Light background to make the structure stand out */
+}
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.container {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  box-sizing: border-box;
+}
+
+.top-box {
+  flex: 1;
+  background: url("./assets/pngtree-rainbow-curves-abstract-colorful-background-image_2164067.jpg")
+    no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  border: 3px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+.middle-section {
+  display: flex;
+  flex: 2;
+}
+
+.nav-box {
+  width: 30%;
+  background-color: lightyellow;
+  padding: 10px;
+  border: 3px solid black;
+  box-sizing: border-box;
+  margin: 0 0 5px 5px;
+}
+
+.nav-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-box li {
+  margin: 5px 0;
+}
+
+.nav-box a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-box a:hover {
+  font-weight: bold;
+  color: white;
+  background-color: darkblue;
+}
+
+.content-box {
+  flex: 1;
+  padding: 10px;
+  border: 3px solid black;
+  box-sizing: border-box;
+  margin: 0 5px 5px 5px;
+}
+
+.content-box ul  {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+a:hover{
+    color: darkgreen;
+}

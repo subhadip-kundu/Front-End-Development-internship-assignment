@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./assets/pexels-golnar-sabzpoush-rashidi-1317651-3268386.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    width: 80%;
+    max-width: 700px;
+    border: 5px solid rgba(0, 0, 0, 0.274);
+}
+h1 {
+    color: #4a90e2;
+    text-align: center;
+}
+p {
+    color: #ff6b6b;
+    text-align: center;
+    font-weight: 600;
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+select, input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.reset-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    width: 20px;
+    height: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: -43px;
+}
+.btn {
+    display: block;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 10px auto 0;
+}
+.btn.next {
+    background-color: #4a90e2;
+    float: right;
+    width: auto;
+    padding: 10px 20px;
+}
+
+
+@media (max-width: 768px) {
+    .input-group {
+        width: 100%;
+    }
+    .form-group {
+        flex-direction: column;
+    }
+    .reset-btn {
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

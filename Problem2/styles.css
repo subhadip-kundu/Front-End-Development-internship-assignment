@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .center-div {
+    width: 200px;
+    height: 200px;
+    background-color: #1fefb4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-size: 2rem;
+  }
+  
